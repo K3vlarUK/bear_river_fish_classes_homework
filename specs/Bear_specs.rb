@@ -21,6 +21,14 @@ class BearTest < MiniTest::Test
     @river = River.new("Amazon", @fish)
   end
 
+  def test_bear_name
+    assert_equal("Yogi", @bear.name())
+  end
+
+  def test_bear_type
+    assert_equal("Grizzly", @bear.type())
+  end
+
   def test_check_stomach()
     assert_equal(0, @bear.check_stomach())
   end

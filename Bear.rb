@@ -1,4 +1,5 @@
 class Bear
+  attr_reader :name, :type
 
   def initialize(name, type)
     # A bear should have a name e.g. "Yogi" and a type e.g. "Grizzly"
